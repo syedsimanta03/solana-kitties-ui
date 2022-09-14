@@ -1,6 +1,8 @@
 import '../css/navbar.css'
+import useToggle from '../hooks/toogle'
 
 const Navbar = () => {
+const [show, setShow] = useToggle()
   return (
     <>
       <div className='top-bar' id='navBar'>
@@ -41,7 +43,7 @@ const Navbar = () => {
       {/* mobile nav */}
       <div className='mobile-nav' id='mobileNav'>
         <div className='mobile-left-logo'>
-          <div className='menu-list'>
+          <div className='menu-list' onClick={() => setShow((show) => !show)}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='100%'
@@ -79,7 +81,7 @@ const Navbar = () => {
           </a>
         </div>
         {/*make 70% width onClick hamburger icon */}
-        <div className='sub-menu' style={{ width: 0 }}>
+        <div className={`sub-menu ${show ? 'w70' : 'w0'}`}>
           <div>
             <div className='logo-main'>
               <img
@@ -105,7 +107,12 @@ const Navbar = () => {
             </div>
           </div>
           {/* make visible/render onClick hamburger icon*/}
-          {/* <div className='overlay'></div> */}
+          {show && (
+            <div
+              className='overlay'
+              onClick={() => setShow((show) => !show)}
+            ></div>
+          )}
         </div>
       </div>
     </>

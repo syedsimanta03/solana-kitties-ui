@@ -48,6 +48,8 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.w0{width: 0}
+.w70{width: 70% !important}
 .top-menu {
   color: #656565;
   font-size: 16px;
