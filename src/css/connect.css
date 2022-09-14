@@ -86,8 +86,11 @@
   border-radius: 9px;
   cursor: pointer;
   display: flex;
-  max-width: 190px;
   text-transform: uppercase;
+}
+.disconnect {
+    display: flex;
+    place-items: center;
 }
 .wallet-wrapper.not-login .connect-info span {
   color: #fff;

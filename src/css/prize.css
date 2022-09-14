@@ -163,7 +163,7 @@ input[type="number"] {
 }
 .price-label {
   margin: 20px auto 0;
-  width: 435px;
+  width: 70%;
 }
 .kitty-number {
   border: 1px solid #998feb;
@@ -336,6 +336,9 @@ input[type="number"] {
   }
 }
 @media (max-width: 380px) {
+.max-ticket{
+  font-size: 18px;
+}
   .lucky-winner-left img {
     width: 90%;
   }

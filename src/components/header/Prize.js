@@ -1,6 +1,9 @@
 import '../../css/prize.css'
+import { useContext } from 'react'
+import { ButtonContext } from '../../hooks/globalToggle'
 
 const Prize = () => {
+ const { toggle, toggleFunction } = useContext(ButtonContext)
   return (
     <div className='prize-border-line'>
       <div className='MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-between'>
@@ -52,8 +55,13 @@ const Prize = () => {
                     className='wallet-adapter-button wallet-btn-connect timer-btn buy-tickets'
                     tabIndex={0}
                     type='button'
+                    onClick={toggleFunction}
                   >
-                    Connect
+                    {!toggle ? (
+                      <span style={{ color: '#222'}}>Connect</span>
+                    ) : (
+                      <span style={{ color: '#222'}}>Buy Tickets</span>
+                    )}
                   </button>
                 </div>
                 <div>
