@@ -1,0 +1,16 @@
+.dvSNrC {
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.dvSNrC > svg {
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease-in-out 0s;
+  color: rgb(139, 149, 158);
+}
+.dvSNrC > svg:hover {
+  color: rgb(255, 208, 41);
+}

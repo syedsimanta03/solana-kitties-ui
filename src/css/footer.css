@@ -1,0 +1,32 @@
+.gNmnBd {
+  background: rgb(255, 255, 255);
+  padding: 10px 25px;
+}
+.gNmnBd p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  color: rgb(108, 108, 108);
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .gNmnBd p {
+    font-size: 16px;
+  }
+}
+.fXjYUv {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.fXjYUv img {
+  width: 30px;
+  margin: 7px 3px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+.fXjYUv img:hover {
+  transform: scale(1.07);
+}

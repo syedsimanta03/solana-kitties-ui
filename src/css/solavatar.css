@@ -1,0 +1,107 @@
+.main-container {
+  width: 1120px;
+}
+.main-layout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 1200px) and (max-width: 1360px) {
+  .main-container {
+    width: 980px;
+  }
+}
+@media (max-width: 1199px) {
+  .main-container {
+    width: 90% !important;
+  }
+}
+.solanaAvatarArea {
+  background: #161131;
+  margin-top: -1px;
+  min-height: 100px;
+  padding-bottom: 0;
+  position: relative;
+}
+.solanaAvatarArea:after {
+  background: linear-gradient(180deg, #161131, #5ddf8f 200%);
+  bottom: 0;
+  content: "";
+  height: 140px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.solanaAvatarArea .main-layout {
+  position: relative;
+  z-index: 99;
+}
+.solana p {
+  color: #50fc42;
+  text-align: right;
+}
+.solanaAvatarArea .solana {
+  bottom: 20px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.kitty-footer img {
+  display: block;
+  margin: 0 auto;
+  max-width: 380px;
+  text-align: center;
+}
+@media (max-width: 959px) {
+  .solanaAvatarArea {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  .kitty-footer {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .solanaAvatarArea {
+    padding-bottom: 25px;
+  }
+}
+/*! CSS  from: Embedded */
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.MuiGrid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .MuiGrid-grid-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+} */
+/* @media (min-width: 600px) {
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+} */
+@media (min-width: 960px) {
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+}
+@media (min-width: 1280px) {
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+}
