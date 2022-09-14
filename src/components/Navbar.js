@@ -105,7 +105,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* make visible/render onClick hamburger icon*/}
-          <div className='overlay'></div>
+          {/* <div className='overlay'></div> */}
         </div>
       </div>
     </>

@@ -190,6 +190,11 @@
     flex-basis: 100%;
   }
 }
+@media (max-width: 960px) {
+  .title-img {
+    margin-top: 10px;
+  }
+}
 @media (min-width: 960px) {
   .MuiGrid-grid-md-5 {
     flex-grow: 0;

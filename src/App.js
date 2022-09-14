@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className='gradient gradient-lottery'>
+      <main className='gradient gradient-lottery' id='body'>
         <div className='main-layout with-login'>
           <div className='main-container'>
           <Header/>

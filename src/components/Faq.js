@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import '../css/faq.css'
 
 const Faq = () => {
+  const [show, setShow] = useState(false)
+
   return (
     <section className='faq-wrapper faq-lottery' id='faq'>
       <div className='wrapper-container'>
@@ -304,7 +307,7 @@ const Faq = () => {
                         </div>
                         <div
                           className='MuiCollapse-root MuiCollapse-hidden'
-                          style={{ minHeight: 0 }}
+                          style={{ minHeight: 40 }}
                         >
                           <div className='MuiCollapse-wrapper'>
                             <div className='MuiCollapse-wrapperInner'>
